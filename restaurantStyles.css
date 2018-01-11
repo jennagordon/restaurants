@@ -1,0 +1,27 @@
+/*common elements across all pages*/
+h1 {
+  font-size: 22px;
+  font-style: bold;
+  color: green;
+  font-family: Verdana, Geneva, sans-serif;
+}
+footer {
+  font-size: 14px;
+  text-align: center;
+}
+.required{
+  font-weight: bold;
+}
+a:link{
+  color: red;
+}
+a:visited{
+  color: #800080;
+}
+a:hover{
+  color: #008B8B;
+  font-weight: bold;
+}
+a:active{
+  text-decoration: none;
+}

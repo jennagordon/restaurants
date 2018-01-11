@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Contact Us</title>
+  <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div>
@@ -15,13 +16,13 @@
 <div>
   <form action="submit.html" method="POST">
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br />
+    <input type="text" id="name" name="name" required><br />
     <label for="email">Email:</label>
-    <input type="text" id="email" name="email"><br />
+    <input type="text" id="email" name="email" required><br />
     <label for="phone">Phone:</label>
-    <input type="text" id="phone" name="phone"><br />
+    <input type="text" id="phone" name="phone" required><br />
     <label for="reasonForInquiry">Reason for Inquiry:</label>
-    <select id="reasonForInquiry" name="reasonForInquiry">
+    <select id="reasonForInquiry" name="reasonForInquiry" required>
     <option value="default">Catering</option>
     <option value="privateParty">Private Party</option>
     <option value="feedback">Feedback</option>
@@ -49,10 +50,10 @@
   </form>
 </div>
 </body>
-<div id="footer">
+<div>
   <footer>
-    <p><center>22 Maplewood Ave, Morgantown, WV 26501</center></p>
-    <p><center>304-598-6500</center></p>
+    <p>22 Maplewood Ave, Morgantown, WV 26501</p>
+    <p>304-598-6500</p>
   </footer>
 </div>
 
