@@ -2,8 +2,9 @@
 h1 {
   font-size: 22px;
   font-style: bold;
-  color: green;
+  color: #00802b;
   font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
 }
 footer {
   font-size: 14px;
