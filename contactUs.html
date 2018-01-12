@@ -3,6 +3,20 @@
 <head>
   <title>Contact Us</title>
   <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+  <style>
+    body{
+      background-color: #FFE4E1;
+      text-align: center;
+    }
+    textarea {
+      vertical-align: top;
+    }
+    .required {
+      font-weight: bold;
+      padding: 5px 10px 5px 10px;
+    }
+
+  </style>
 </head>
 <body>
 <div>
@@ -10,31 +24,31 @@
 <hr />
 </div>
 <div>
-  <p><a href="Home Page.html" target="_blank">Home</a>   <a href="menu.html" target="_blank">Menu</a>   <a href="contactUs.html" target="_blank">Contact Us</a></p>
+  <p style="text-align: left;"><a href="Home Page.html" target="_blank">Home</a>   <a href="menu.html" target="_blank">Menu</a>   <a href="contactUs.html" target="_blank">Contact Us</a></p>
   <hr />
 </div>
 <div>
   <form action="submit.html" method="POST">
-    <label for="name">Name:</label>
+    <label class="required" for="name">Name:</label>
     <input type="text" id="name" name="name" required><br />
-    <label for="email">Email:</label>
+    <label class="required" for="email">Email:</label>
     <input type="text" id="email" name="email" required><br />
-    <label for="phone">Phone:</label>
-    <input type="text" id="phone" name="phone" required><br />
-    <label for="reasonForInquiry">Reason for Inquiry:</label>
-    <select id="reasonForInquiry" name="reasonForInquiry" required>
+    <label class="required" for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone" required><br /></div>
+    <label class="required" for="inquiry">Reason for Inquiry:</label>
+    <select id="inquiry" name="inquiry" required>
     <option value="default">Catering</option>
     <option value="privateParty">Private Party</option>
     <option value="feedback">Feedback</option>
     <option value="other">Other</option></select><br />
-    <label for="additionalInfo">Additional Information:</label>
+    <label class="required" for="additionalInfo">Additional Information:</label>
     <textarea id="additionalInfo"></textarea><br />
-    <label for="restaurant">Have you been to the restaurant?</label>
+    <label class="required" for="restaurant">Have you been to the restaurant?</label>
     <input type="radio" id="choice1" name="restaurant" value="No">
     <label for="choice1">No</label>
     <input type="radio" id="choice2" name="restaurant" value="Yes">
     <label for="choice2">Yes</label><br />
-    <label for="contact">Best days to contact you:</label>
+    <label class="required" for="contact">Best days to contact you:</label>
     <input type="checkbox" id="m" name="day" value="m">
     <label for="m">M</label>
     <input type="checkbox" id="t" name="day" value="t">
@@ -45,6 +59,7 @@
     <label for="th">Th</label>
     <input type="checkbox" id="f" name="day" value="f">
     <label for="f">F</label><br />
+    <br />
     <input type="submit" name="submit" value="Send Request">
     <hr />
   </form>
