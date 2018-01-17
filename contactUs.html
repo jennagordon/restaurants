@@ -2,6 +2,14 @@
 <html>
 <head>
   <title>Contact Us</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
   <style>
     body{
@@ -19,22 +27,31 @@
   </style>
 </head>
 <body>
-<div>
+  <noscript>
+    <div class="awesome-fancy-styling">
+      This site requires JavaScript. It will only be visible if you have it disabled.
+    </div>
+  </noscript>
+<div class="container-fluid">
   <h1>Sophia's Food Garden</h1>
 <hr />
 </div>
-<div>
-  <p style="text-align: left;"><a href="Home Page.html" target="_blank">Home</a>   <a href="menu.html" target="_blank">Menu</a>   <a href="contactUs.html" target="_blank">Contact Us</a></p>
-  <hr />
+<div class="container-fluid">
+  <ul class="nav nav-tabs">
+    <li><a href="index.html" target="_blank"><span class="glyphicon glyphicon-home"></span></a></li>
+    <li><a href="menu.html" target="_blank">Menu</a></li>
+    <li class="active"><a href="contactUs.html" target="_blank">Contact Us</a></li>
+  </ul>
+  <br>
 </div>
-<div>
+<div class="container-fluid">
   <form action="submit.html" method="POST">
     <label class="required" for="name">Name:</label>
     <input type="text" id="name" name="name" required><br />
     <label class="required" for="email">Email:</label>
     <input type="text" id="email" name="email" required><br />
     <label class="required" for="phone">Phone:</label>
-    <input type="text" id="phone" name="phone" required><br /></div>
+    <input type="text" id="phone" name="phone" required><br />
     <label class="required" for="inquiry">Reason for Inquiry:</label>
     <select id="inquiry" name="inquiry" required>
     <option value="default">Catering</option>
@@ -65,7 +82,7 @@
   </form>
 </div>
 </body>
-<div>
+<div class="container-fluid">
   <footer>
     <p>22 Maplewood Ave, Morgantown, WV 26501</p>
     <p>304-598-6500</p>

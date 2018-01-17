@@ -2,7 +2,17 @@
 <html>
 <head>
   <title>Menu</title>
-  <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
   <style>
     body {
       background-color: #E6E6FA;
@@ -48,46 +58,57 @@
   </style>
 </head>
 <body>
-  <div>
+  <noscript>
+      <div class="awesome-fancy-styling">
+        This site requires JavaScript. It will only be visible if you have it disabled.
+      </div>
+    </noscript>
+  <div class="container-fluid">
   <h1>Sophia's Food Garden</h1>
   <hr />
 </div>
-<div>
-  <p><a href="Home Page.html" target="_blank">Home</a>   <a href="menu.html" target="_blank">Menu</a>   <a href="contactUs.html" target="_blank">Contact Us</a></p>
-</div>
-  <div>
-    <hr />
-    <table class="table1">
-    <tr>
-      <th>Burger and Fries</th>
-      <th>Hot Dog and Chips</th>
-      <th>Italian Sausage and Peppers</th>
-    </tr>
-      <tr>
-        <td> An American Classic! Your choice- with or without cheese.
-            Pickle, onion, tomato, and lettuce.
-            Served with our famous thick cut french fries. $7.95</td>
-        <td>A summer classic! Your choice of bun (wheat or white).
-          Served with our house made chips. $7.95</td>
-        <td>An All-Time Favorite! Your choice- mild or spicy
-            Cole Slaw. Served with garlic mashers. $10.95</td>
-        </tr>
-        <tr>
-          <th>Tenderloin Sandwich and Chips</th>
-          <th>House Salad</th>
-          <th>Brisket Sandwich and Fries</th>
-        </tr>
-        <tr>
-          <td>Really Hits the Spot! Plain or Sesame Seed Bun. Pickle, onion, tomato,
-            and lettuce. Served with our house-made chips</td>
-          <td>On the lighter Side. Your choice- with or without cheese. Iceberg lettuce,
-            tomatoes, peppers. Thousand Island or Ranch Dressing and served with a dinner roll. $6.95</td>
-          <td>A Taste of Texas! Smoked Brisket on thick-cut Texas Toast. Cole Slaw and served with
-            our famous thick-cut french fries. $7.95</td>
-        </tr>
-    </table>
+<div class="container-fluid">
+  <ul class="nav nav-tabs">
+    <li><a href="index.html" target="_blank"><span class="glyphicon glyphicon-home"></span></a></li>
+    <li class="active"><a href="menu.html" target="_blank">Menu</a></li>
+    <li><a href="contactUs.html" target="_blank">Contact Us</a></li>
+  </ul>
+  <br>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 col-lg-4">
+        <h2>Burger and Fries</h2>
+          <p>An American Classic! Your choice- with or without cheese.
+          Pickle, onion, tomato, and lettuce.
+          Served with our famous thick cut french fries. $7.95</p></div>
+      <div class="col-sm-12 col-lg-4">
+          <h2>Hot Dog and Chips</h2>
+          <p>A summer classic! Your choice of bun (wheat or white).
+                Served with our house made chips. $7.95</p></div>
+      <div class="col-sm-12 col-lg-4">
+          <h2>Italian Sausage and Peppers</h2>
+          <p>An All-Time Favorite! Your choice- mild or spicy
+              Cole Slaw. Served with garlic mashers. $10.95</p></div>
+            </div>
+    <div class="row">
+      <div class="col-sm-12 col-lg-4">
+         <h2>Tenderloin Sandwhich and Chips</h2>
+         <p>Really Hits the Spot! Plain or Sesame Seed Bun. Pickle, onion, tomato,
+          and lettuce. Served with our house-made chips</p></div>
+      <div class="col-sm-12 col-lg-4">
+          <h2>House Salad</h2>
+          <p>On the lighter Side. Your choice- with or without cheese. Iceberg lettuce,
+            tomatoes, peppers. Thousand Island or Ranch Dressing and served with a dinner roll. $6.95</p></div>
+        <div class="col-sm-12 col-lg-4">
+          <h2>Brisket Sandwich and Fries</h2>
+          <p>A Taste of Texas! Smoked Brisket on thick-cut Texas Toast. Cole Slaw and served with
+            our famous thick-cut french fries. $7.95</p></div>
+          </div>
+        </div>
   <br />
   <br />
+  <div class="container-fluid">
   <table class="table2">
     <tr>
       <th>Beverages</th>
@@ -113,7 +134,7 @@
   </table>
     <hr />
 </div>
-<div>
+<div class="container-fluid">
   <footer>
     <p>22 Maplewood Ave, Morgantown, WV 26501</p>
     <p>304-598-6500</p>
